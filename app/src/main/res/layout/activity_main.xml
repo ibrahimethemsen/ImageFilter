@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingVertical="60dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.ibrahimethemsen.imagefilter.ImageFilter
+        android:id="@+id/imageFilter"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/set_saturation_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturation"
+        app:layout_constraintBottom_toBottomOf="@+id/set_saturation"
+        app:layout_constraintEnd_toStartOf="@+id/set_saturation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/set_saturation" />
+
+    <Switch
+        android:id="@+id/set_saturation"
+        android:layout_marginTop="16dp"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageFilter" />
+
+
+    <TextView
+        android:id="@+id/set_blur_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blur"
+        app:layout_constraintBottom_toBottomOf="@+id/set_blur"
+        app:layout_constraintEnd_toStartOf="@+id/set_blur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_saturation" />
+
+    <Switch
+        android:id="@+id/set_blur"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/set_saturation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
